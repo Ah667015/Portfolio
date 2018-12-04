@@ -1,0 +1,130 @@
+* {
+/* styles in here affect everything!!!! */
+/* fonts from adobe
+font-family: 'futura-pt', sans-serif;
+*/
+font-family: 'futura-pt', sans-serif;
+box-sizing:border-box;
+}
+
+body {
+  margin-left: 0;
+  margin-top: 0;
+  margin-right: 0;
+}
+
+header {
+  margin-bottom: 0 auto;
+  margin-top: 0 auto;
+  /* display is a grid, each entity contains is a "block" in the grid */
+  display:grid;
+  grid-template-columns: 50% 50%;
+}
+
+header div.header_logo1 {
+  /*
+  text-align:center;
+  */
+  padding-left: 65px;
+  padding-top: 50px;
+  padding-bottom: 40px
+
+}
+
+/* image is larger than it really needs to be expecially on smaller screens */
+header div.header_logo1 img {
+  width: 0 auto;
+  height: 120px;
+}
+
+/* Main Navigation */
+nav {
+    width: 100%;
+}
+
+nav ul {
+    padding-top: 120px;
+    margin: 0;
+    padding-left: 210px;
+}
+
+nav ul li {
+    display: inline-block; /* Arrange list items in horizontal line */
+    list-style-type: none; /* We don't want bullets on our items */
+    font-size: 24px;
+    padding-left: 50px;
+    margin: 0;
+    padding: 8px 0; /* Sets height of nav bar */
+    padding-bottom: 30px;
+}
+header nav ul li a {
+    color: #000000;
+    text-decoration: none;
+    padding: 10px;
+}
+header nav ul li.active a {
+	border-bottom: 4px solid #008080;
+}
+
+nav ul li a:hover {
+        border-bottom: 4px solid #008080;
+        text-decoration: none;
+    }
+
+
+/* Center website */
+
+
+.main {
+    max-width: 1500px;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+
+.row {
+    padding-left: 80px;
+}
+
+/* Add padding BETWEEN each column (if you want) */
+.row,
+.row > .column {
+    padding: 8px;
+}
+
+/* Create four equal columns that floats next to each other */
+.column {
+    float: left;
+    width: 25%;
+    height: 40%;
+}
+
+/* Clear floats after rows */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Content */
+.content {
+    padding: 10px;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 900px) {
+    .column {
+        width: 50%;
+    }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+    .column {
+        width: 100%;
+    }
+
+p {
+  size: 15px;
+
+}
