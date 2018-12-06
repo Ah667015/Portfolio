@@ -6,59 +6,98 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="https://use.typekit.net/zhk5mzl.css" rel="stylesheet">
 
-  <link rel="stylesheet" href="css/style2.css" />
-  <link rel="navhtml" href="scripts/button.html" />
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.2.0/ekko-lightbox.min.css">
+
+  <link rel="stylesheet" href="css/stylee.css" />
+  <link rel="lightbox" href="scripts/lightbox.js" />
 
 </head>
 
-<body style="background: url(images/lightteal.png); ">
-  <header style="background-color: white;">
-    <div class="header_logo1">
+<body>
+  <header class="row">
+    <div class="header_logo1 col-sm-3">
       <img src="images/logo22.png" alt="Alexandra Herrera Logo">
     </div>
-      <nav>
-        <ul>
-          <li class="active"><a href="index.html">my work</a></li>
-          &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-          <li><a href="aboutme.html">about me</a></li>
-          &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-          <li><a href="contact.html">contact</a></li>
+
+    <nav class="navbar navbar-expand-lg col-sm-9">
+  <a class="navbar-brand" href="#"></a>
+
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+    &#9776;
+  </button>
+  <div class="collapse navbar-collapse flex-row-reverse" id="navbarNavAltMarkup">
+    <div class="navbar-nav">
+      <a class="nav-item nav-link active" href="index.html">my work <span class="sr-only">(current)</span></a>
+      <a class="nav-item nav-link" href="aboutme.html">about me</a>
+      <a class="nav-item nav-link" href="contact.html">contact</a>
+    </div>
+  </div>
+</nav>
+ <!--
+    <div class="navbar col-sm-9">
+        <ul class= "nav">
+          <li class="nav-item">
+             <a class="nav-link active" href="index.html">my work</a>
+          </li>
+          &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+          <li class="nav-item">
+             <a class="nav-link" href="aboutme.html">about me</a>
+          </li>
+          &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+          <li class="nav-item">
+             <a class="nav-link" href="contact.html">contact</a>
+          </li>
         </ul>
-      </nav>
+      </div>
+    -->
   </header>
 
-  <div class="main">
-    <!-- Portfolio Gallery Grid -->
-    <div class="row">
-      <div class="column">
-        <div class="content">
-          <img src="mountains.jpg" alt="Mountains" style="width:100%">
-          <h3>My Work</h3>
-        </div>
+  <div id="MainContent">
+      <!--  from  https://codepen.io/soumyajitn/pen/VbqLew -->
+      <div class="container">
+      <div class="row">
+        <a href="images/lakes.png" data-toggle="lightbox" data-gallery="gallery" class="col-md-3">
+          <img src="images/lakescrop.png" class="img-fluid rounded">
+        </a>
+        <a href="images/spiceup.png" data-toggle="lightbox" data-gallery="gallery" class="col-md-3">
+          <img src="images/spiceupcrop.png" class="img-fluid rounded">
+        </a>
+        <a href="images/helvetica.png" data-toggle="lightbox" data-gallery="gallery" class="col-md-3">
+          <img src="images/helveticacrop.png" class="img-fluid rounded">
+        </a>
+        <a href="images/sol.png" data-toggle="lightbox" data-gallery="gallery" class="col-md-3">
+          <img src="images/solcrop.png" class="img-fluid rounded">
+        </a>
       </div>
-      <div class="column">
-        <div class="content">
-          <img src="lights.jpg" alt="Lights" style="width:100%">
-          <h3>My Work</h3>
-        </div>
-      </div>
-      <div class="column">
-        <div class="content">
-          <img src="nature.jpg" alt="Nature" style="width:100%">
-          <h3>My Work</h3>
-        </div>
-      </div>
-      <div class="column">
-        <div class="content"
-        >
-          <img src="mountains.jpg" alt="Mountains" style="width:100%">
-          <h3>My Work</h3>
-        </div>
-      </div>
-    </div>
-    </div>
+      <br>
 
-    <!-- END MAIN -->
+      <div class="row">
+        <a href="images/lakes.png" data-toggle="lightbox" data-gallery="gallery" class="col-md-3">
+          <img src="images/lakescrop.png" class="img-fluid rounded">
+        </a>
+        <a href="images/spiceup.png" data-toggle="lightbox" data-gallery="gallery" class="col-md-3">
+          <img src="images/spiceupcrop.png" class="img-fluid rounded">
+        </a>
+        <a href="images/helvetica.png" data-toggle="lightbox" data-gallery="gallery" class="col-md-3">
+          <img src="images/helveticacrop.png" class="img-fluid rounded">
+        </a>
+        <a href="images/sol.png" data-toggle="lightbox" data-gallery="gallery" class="col-md-3">
+          <img src="images/solcrop.png" class="img-fluid rounded">
+        </a>
+      </div>
+    </div>
+    <!--  end of from  https://codepen.io/soumyajitn/pen/VbqLew -->
+    </div><!-- #MainContent -->
+
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.2.0/ekko-lightbox.min.js"></script>
+<script src="scripts/lightbox.js"></script>
+
 </body>
+
 
 </html>

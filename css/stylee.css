@@ -1,0 +1,97 @@
+* {
+/* styles in here affect everything!!!! */
+/* fonts from adobe
+font-family: 'futura-pt', sans-serif;
+*/
+font-family: 'futura-pt', sans-serif;
+box-sizing:border-box;
+}
+
+body {
+  margin-left: 0;
+  margin-top: 0;
+  margin-right: 0;
+  background-color:rgba(0, 128, 128, 0.2 );
+}
+
+
+header {
+  margin-bottom: 0 auto;
+  margin-top: 0 auto;
+  background-color: white;
+}
+
+header div.header_logo1 {
+  /*
+  text-align:center;
+  */
+  padding-left: 65px;
+  padding-top: 50px;
+  padding-bottom: 40px;
+
+}
+
+/* image is larger than it really needs to be expecially on smaller screens */
+header div.header_logo1 img {
+  width: 0 auto;
+  height: 120px;
+
+}
+a.nav-item {
+  color: black;
+  font-size: 1.4em;
+  margin-left: 60px;
+}
+a.nav-item.active{
+  text-decoration:underline #008080;
+}
+
+a.nav-item:hover {
+  text-decoration:underline #008080;
+}
+nav.navbar {
+  padding-right: 65px;
+  align-items: flex-end;
+  padding-bottom: 30px;
+}
+div.navbar-collapse {
+  text-align:right;
+}
+header div.navbar ul.nav  {
+  text-align: right;
+
+}
+#MainContent {
+  padding-top: 40px;
+}
+
+
+body div.aboutme {
+padding-top: 40px;
+padding-left: 65px
+
+}
+.section_1 {
+padding-top: 40px;
+padding-left: 100px;
+
+}
+
+.text {
+font-size: 20px;
+color: black;
+vertical-align: middle;}
+
+
+
+
+
+
+
+
+
+
+
+/* Center website */
+
+/* from https://codepen.io/soumyajitn/pen/VbqLew */
