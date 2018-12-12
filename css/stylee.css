@@ -16,8 +16,7 @@ body {
 
 
 header {
-  margin-bottom: 0 auto;
-  margin-top: 0 auto;
+
   background-color: white;
 }
 
@@ -33,7 +32,7 @@ header div.header_logo1 {
 
 /* image is larger than it really needs to be expecially on smaller screens */
 header div.header_logo1 img {
-  width: 0 auto;
+  width: auto;
   height: 120px;
 
 }
@@ -62,30 +61,52 @@ header div.navbar ul.nav  {
 
 }
 
-#MainContent {
-  padding-top: 40px;
-  float: center;
+nav.navbar{
+align-items: flex-end;
+padding-bottom: 35px;
+width:100%;
+}
+
+.MainContent {
+  padding-top:40px;
+  padding-left: 45px;
+  padding-right:45px;
 }
 
 .container {
   min-width: 100%;
   align-content: center;
+  margin-bottom: 50px;
 }
 .container .row img {
   width: 100%;
   height: auto;
 }
+.container .row img:hover {
+  opacity: .5;
+}
+
+.col-sm-6 {
+  padding-bottom: 15px;
+}
+
 
 
 body div.aboutme {
 padding-top: 40px;
-padding-left: 65px
+padding-bottom: 35px;
 
 }
 .section_1 {
 padding-top: 40px;
-padding-left: 100px;
+padding-left: 80px;
+padding-right: 40px;
 
+}
+.section_1 .col-md-7 {
+  padding-left: 0px;
+  padding-bottom: 40px;
+  padding-top: 30px;
 }
 
 .text {
@@ -94,22 +115,21 @@ color: black;
 vertical-align: middle;
 }
 
-@media screen and (max-width: 575px) {
-  header div.header_logo1 {
-    padding-bottom: 0px;
-}
-}
-@media screen and (max-width: 575px) {
-  nav.navbar.navbar-expand-lg.col-sm-9 {
-    padding-bottom: 5px;
-  }
+.contactme {
+  padding-top: 40px;
+  padding-left: 40px;
 }
 
-nav.navbar{
-align-items: flex-end;
-padding-bottom: 25px;
-width:100%;
+h2.head2 {
+  color: #808080;
 }
+.socialMedia img {
+  height: 40px;
+  width: 40px;
+
+}
+
+
 
 
 .footer {
